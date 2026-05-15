@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SEPSA</title>
+<title>INFORMAÇÃO DE TRAJETOS - SEPSA</title>
 
 <style>
 
@@ -18,16 +18,18 @@
 
 body{
     background:#021427;
-    font-family:Arial;
+    font-family:Arial, Helvetica, sans-serif;
     padding:20px;
+    color:white;
 }
 
 .container{
     width:95%;
     margin:auto;
     background:#0d2b45;
-    padding:30px;
     border-radius:20px;
+    padding:30px;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
 }
 
 header{
@@ -35,13 +37,19 @@ header{
     margin-bottom:30px;
 }
 
-h1{
-    color:#5fe7ff;
+header h1{
+    color:#63e3ff;
+    font-size:42px;
     margin-bottom:10px;
 }
 
-h2{
-    color:#5fe7ff;
+header h2{
+    color:#63e3ff;
+    font-size:28px;
+}
+
+.table-area{
+    overflow-x:auto;
 }
 
 table{
@@ -54,22 +62,27 @@ thead{
 }
 
 thead th{
-    color:#5fe7ff;
-    padding:15px;
+    color:#63e3ff;
+    padding:16px;
+    font-size:18px;
 }
 
 tbody tr{
     background:#15527f;
-    border-bottom:2px solid #0b2437;
+    border-bottom:2px solid #082032;
+}
+
+tbody tr:hover{
+    background:#1d6da3;
 }
 
 tbody td{
-    padding:15px;
-    color:white;
+    padding:14px;
     text-align:center;
+    font-size:17px;
 }
 
-.codigo{
+.numero{
     color:#9cff75;
     font-weight:bold;
 }
@@ -89,6 +102,8 @@ tbody td{
 
 </header>
 
+<div class="table-area">
+
 <table>
 
 <thead>
@@ -105,33 +120,57 @@ tbody td{
 
 <tbody>
 
-<tr>
-<td class="codigo">045</td>
-<td>Brás</td>
-<td>Eng. Goulart</td>
-<td>-</td>
-<td>045 destino EGO</td>
-</tr>
+<tr><td class="numero">045</td><td>Brás</td><td>Engenheiro Goulart</td><td>-</td><td>045 destino EGO - 545 destino BAS</td></tr>
+<tr><td class="numero">049</td><td>Brás</td><td>Comendador Ermelino</td><td>-</td><td>049 destino COM - 549 destino BAS</td></tr>
+<tr><td class="numero">053</td><td>Brás</td><td>São Miguel Paulista</td><td>-</td><td>053 destino SMP - 553 destino BAS</td></tr>
+<tr><td class="numero">057</td><td>Brás</td><td>Itaim Paulista</td><td>-</td><td>057 destino IPA - 557 destino BAS</td></tr>
+<tr><td class="numero">061</td><td>Brás</td><td>Eng. Manoel Feio</td><td>-</td><td>061 destino EMF - 561 destino BAS</td></tr>
+<tr><td class="numero">065</td><td>Brás</td><td>Calmon Viana</td><td>-</td><td>065 destino CAL - 565 destino BAS</td></tr>
 
-<tr>
-<td class="codigo">049</td>
-<td>Brás</td>
-<td>Com. Ermelino</td>
-<td>-</td>
-<td>049 destino COM</td>
-</tr>
+<tr><td class="numero">068</td><td>Eng. Goulart</td><td>Itaim Paulista</td><td>-</td><td>068 destino IPA</td></tr>
+<tr><td class="numero">070</td><td>Eng. Goulart</td><td>Eng. Manoel Feio</td><td>-</td><td>070 destino EMF</td></tr>
+<tr><td class="numero">072</td><td>Eng. Goulart</td><td>Calmon Viana</td><td>-</td><td>072 destino CAL</td></tr>
 
-<tr>
-<td class="codigo">053</td>
-<td>Brás</td>
-<td>São Miguel Paulista</td>
-<td>-</td>
-<td>053 destino SMP</td>
-</tr>
+<tr><td class="numero">074</td><td>São Miguel Pta.</td><td>Eng. Goulart</td><td>-</td><td>074 destino EGO</td></tr>
+<tr><td class="numero">075</td><td>Com. Ermelino</td><td>Eng. Manoel Feio</td><td>-</td><td>075 destino EMF</td></tr>
+<tr><td class="numero">076</td><td>Com. Ermelino</td><td>Calmon Viana</td><td>-</td><td>076 destino CAL</td></tr>
+
+<tr><td class="numero">077</td><td>São Miguel Pta.</td><td>Eng. Manoel Feio</td><td>-</td><td>077 destino EMF</td></tr>
+<tr><td class="numero">078</td><td>São Miguel Pta.</td><td>Calmon Viana</td><td>-</td><td>078 destino CAL</td></tr>
+<tr><td class="numero">079</td><td>Itaim Paulista</td><td>Calmon Viana</td><td>-</td><td>079 destino CAL</td></tr>
+<tr><td class="numero">080</td><td>Eng. Manoel Feio</td><td>Calmon Viana</td><td>-</td><td>080 destino CAL</td></tr>
+
+<tr><td class="numero">081</td><td>Eng. Goulart</td><td>Aeroporto-Guarulhos</td><td>-</td><td>081 destino AIR</td></tr>
+<tr><td class="numero">082</td><td>Brás</td><td>Aeroporto-Guarulhos</td><td>Transferência com o metrô</td><td>-</td></tr>
+<tr><td class="numero">083</td><td>Brás</td><td>Aeroporto-Guarulhos</td><td>-</td><td>083 destino AIR</td></tr>
+<tr><td class="numero">084</td><td>Luz</td><td>Aeroporto-Guarulhos</td><td>Transferência com o metrô</td><td>-</td></tr>
+
+<tr><td class="numero">085</td><td>Barra Funda</td><td>Itaquera</td><td>-</td><td>085 destino ITQ</td></tr>
+<tr><td class="numero">086</td><td>Barra Funda</td><td>Itaquera</td><td>Transferência com o metrô</td><td>-</td></tr>
+
+<tr><td class="numero">087</td><td>Barra Funda</td><td>Guaianases</td><td>-</td><td>087 destino GUA</td></tr>
+<tr><td class="numero">088</td><td>Barra Funda</td><td>Guaianases</td><td>Transferência com o metrô</td><td>-</td></tr>
+
+<tr><td class="numero">089</td><td>Barra Funda</td><td>Ferraz Vasconcelos</td><td>-</td><td>089 destino FER</td></tr>
+<tr><td class="numero">090</td><td>Barra Funda</td><td>Ferraz Vasconcelos</td><td>Transferência com o metrô</td><td>-</td></tr>
+
+<tr><td class="numero">091</td><td>Barra Funda</td><td>Calmon Viana</td><td>-</td><td>091 destino CAL</td></tr>
+<tr><td class="numero">092</td><td>Barra Funda</td><td>Calmon Viana</td><td>Transferência com o metrô</td><td>-</td></tr>
+
+<tr><td class="numero">093</td><td>Barra Funda</td><td>Suzano</td><td>-</td><td>093 destino SUZ</td></tr>
+<tr><td class="numero">094</td><td>Barra Funda</td><td>Suzano</td><td>Transferência com o metrô</td><td>-</td></tr>
+
+<tr><td class="numero">095</td><td>Barra Funda</td><td>Mogi das Cruzes</td><td>-</td><td>095 destino MOG</td></tr>
+<tr><td class="numero">096</td><td>Barra Funda</td><td>Mogi das Cruzes</td><td>Transferência com o metrô</td><td>-</td></tr>
+
+<tr><td class="numero">097</td><td>Barra Funda</td><td>Estudantes</td><td>-</td><td>097 destino EST</td></tr>
+<tr><td class="numero">098</td><td>Barra Funda</td><td>Estudantes</td><td>Transferência com o metrô</td><td>-</td></tr>
 
 </tbody>
 
 </table>
+
+</div>
 
 </div>
 
