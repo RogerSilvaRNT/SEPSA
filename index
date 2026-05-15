@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SEPSA</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#021427;
+    font-family:Arial;
+    padding:20px;
+}
+
+.container{
+    width:95%;
+    margin:auto;
+    background:#0d2b45;
+    padding:30px;
+    border-radius:20px;
+}
+
+header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+h1{
+    color:#5fe7ff;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#5fe7ff;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:black;
+}
+
+thead th{
+    color:#5fe7ff;
+    padding:15px;
+}
+
+tbody tr{
+    background:#15527f;
+    border-bottom:2px solid #0b2437;
+}
+
+tbody td{
+    padding:15px;
+    color:white;
+    text-align:center;
+}
+
+.codigo{
+    color:#9cff75;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>INFORMAÇÃO DE TRAJETOS - SEPSA</h1>
+<h2>Série 8000 - Sierra</h2>
+
+</header>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Nº</th>
+<th>Origem</th>
+<th>Destino</th>
+<th>Observações</th>
+<th>Tela 'por código'</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td class="codigo">045</td>
+<td>Brás</td>
+<td>Eng. Goulart</td>
+<td>-</td>
+<td>045 destino EGO</td>
+</tr>
+
+<tr>
+<td class="codigo">049</td>
+<td>Brás</td>
+<td>Com. Ermelino</td>
+<td>-</td>
+<td>049 destino COM</td>
+</tr>
+
+<tr>
+<td class="codigo">053</td>
+<td>Brás</td>
+<td>São Miguel Paulista</td>
+<td>-</td>
+<td>053 destino SMP</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</body>
+</html>
