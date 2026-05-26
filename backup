@@ -1,219 +1,275 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tabela de Itinerários CPTM</title>
+
+<title>INFORMAÇÃO DE TRAJETOS - SEPSA</title>
 
 <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    background:#f5f5f5;
-    margin:20px;
+    background:#021427;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:20px;
+    color:white;
+}
+
+.container{
+    width:95%;
+    margin:auto;
+    background:#0d2b45;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+header h1{
+    color:#63e3ff;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header h2{
+    color:#63e3ff;
+    font-size:28px;
+}
+
+.table-area{
+    overflow-x:auto;
 }
 
 table{
     width:100%;
     border-collapse:collapse;
-    background:#fff;
 }
 
-th{
-    background:#003366;
-    color:white;
-    padding:8px;
-    border:1px solid #ccc;
+thead{
+    background:black;
 }
 
-td{
-    padding:6px;
-    border:1px solid #ccc;
+thead th{
+    color:#63e3ff;
+    padding:16px;
+    font-size:18px;
+}
+
+tbody tr{
+    background:#15527f;
+    border-bottom:2px solid #082032;
+}
+
+tbody tr:hover{
+    background:#1d6da3;
+}
+
+tbody td{
+    padding:14px;
     text-align:center;
+    font-size:17px;
 }
 
-.l12{
-    background:#00B7EB;
+.numero{
+    color:#9cff75;
+    font-weight:bold;
 }
 
-.l13{
-    background:#D9D9D9;
+.destaque{
+    background:#ffb703 !important;
+    color:black;
+    font-weight:bold;
 }
 
-.l11{
-    background:#F5E6B3;
-}
-
-.l7{
-    background:#E6E6E6;
-}
 </style>
+
 </head>
 
 <body>
 
+<div class="container">
+
+<header>
+
+<h1>INFORMAÇÃO DE TRAJETOS - SEPSA</h1>
+<h2>Séries 7000/7500/8000 e 9000</h2>
+
+</header>
+
+<div class="table-area">
+
 <table>
+
 <thead>
+
 <tr>
-<th>Linha</th>
 <th>Nº</th>
 <th>Origem</th>
 <th>Destino</th>
 <th>Observações</th>
-<th>Tela por Código</th>
-<th>Tela Inversa</th>
-<th>Sigla Origem</th>
-<th>Sigla Destino</th>
+<th colspan="3">Tela 'por código' e destino</th>
 </tr>
+
 </thead>
 
 <tbody>
+    <tr class="destaque"> <td>065</td><td>Brás</td><td>Calmon Viana</td><td>-</td><td>065 destino CVN</td><td>-</td><td>565 destino BAS</td></tr>
+    <tr class="destaque"> <td>087</td><td>Barra Funda</td><td>Guaianases</td><td>-</td><td>087 destino GUA</td><td>-</td><td>587 destino BFU</td></tr>
+    <tr class="destaque"> <td>088</td><td>Barra Funda</td><td>Guaianases</td><td>Transferência com o metrô</td><td>088 destino GUA</td><td>-</td><td>588 destino BFU</td></tr>
+    <tr class="destaque"> <td>097</td><td>Barra Funda</td><td>Estudantes</td><td>-</td><td>097 destino EST</td><td>-</td><td>597 destino BFU</td></tr>
+    <tr class="destaque"> <td>098</td><td>Barra Funda</td><td>Estudantes</td><td>Transferência com o metrô</td><td>098 destino EST</td><td>-</td><td>598 destino BFU</td></tr>
 
-<tr class="l12">
-<td>Linha 12</td>
-<td>045</td>
-<td>Brás</td>
-<td>Engenheiro Goulart</td>
-<td>-</td>
-<td>045 destino EGO</td>
-<td>545 destino BAS</td>
-<td>BAS</td>
-<td>EGO</td>
-</tr>
+    <tr><td class="numero">-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+    
+<tr><td class="numero">045</td><td>Brás</td><td>Engenheiro Goulart</td><td>-</td><td>045 destino EGO</td><td>-</td><td>545 destino BAS</td></tr>
+<tr><td class="numero">049</td><td>Brás</td><td>Comendador Ermelino</td><td>-</td><td>049 destino ERM</td><td>-</td><td>549 destino BAS</td></tr>
+<tr><td class="numero">053</td><td>Brás</td><td>São Miguel Paulista</td><td>-</td><td>053 destino SMP</td><td>-</td><td>553 destino BAS</td></tr>
+<tr><td class="numero">057</td><td>Brás</td><td>Itaim Paulista</td><td>-</td><td>057 destino ITI</td><td>-</td><td>557 destino BAS</td></tr>
+<tr><td class="numero">061</td><td>Brás</td><td>Eng. Manoel Feio</td><td>-</td><td>061 destino EMF</td><td>-</td><td>561 destino BAS</td></tr>
+<tr class="destaque"> <td class="numero">065</td><td>Brás</td><td>Calmon Viana</td><td>-</td><td>065 destino CVN</td><td>-</td><td>565 destino BAS</td></tr>
 
-<tr class="l12">
-<td>Linha 12</td>
-<td>049</td>
-<td>Brás</td>
-<td>Comendador Ermelino</td>
-<td>-</td>
-<td>049 destino ERM</td>
-<td>549 destino BAS</td>
-<td>BAS</td>
-<td>ERM</td>
-</tr>
+<tr><td class="numero">068</td><td>Eng. Goulart</td><td>Itaim Paulista</td><td>-</td><td>068 destino ITI</td><td>-</td><td>568 destino EGO</td></tr>
+<tr><td class="numero">070</td><td>Eng. Goulart</td><td>Eng. Manoel Feio</td><td>-</td><td>070 destino EMF</td><td>-</td><td>570 destino EGO</td></tr>
+<tr><td class="numero">072</td><td>Eng. Goulart</td><td>Calmon Viana</td><td>-</td><td>072 destino CVN</td><td>-</td><td>572 destino EGO</td></tr>
 
-<tr class="l12">
-<td>Linha 12</td>
-<td>053</td>
-<td>Brás</td>
-<td>São Miguel Paulista</td>
-<td>-</td>
-<td>053 destino SMP</td>
-<td>553 destino BAS</td>
-<td>BAS</td>
-<td>SMP</td>
-</tr>
+<tr><td class="numero">074</td><td>São Miguel Pta.</td><td>Eng. Goulart</td><td>-</td><td>074 destino EGO</td><td>-</td><td>574 destino SMP</td></tr>
+<tr><td class="numero">075</td><td>Com. Ermelino</td><td>Eng. Manoel Feio</td><td>-</td><td>075 destino EMF</td><td>-</td><td>575 destino ERM</td></tr>
+<tr><td class="numero">076</td><td>Com. Ermelino</td><td>Calmon Viana</td><td>-</td><td>076 destino CVN</td><td>-</td><td>576 destino ERM</td></tr>
 
-<tr class="l12">
-<td>Linha 12</td>
-<td>057</td>
-<td>Brás</td>
-<td>Itaim Paulista</td>
-<td>-</td>
-<td>057 destino ITI</td>
-<td>557 destino BAS</td>
-<td>BAS</td>
-<td>ITI</td>
-</tr>
+<tr><td class="numero">077</td><td>São Miguel Pta.</td><td>Eng. Manoel Feio</td><td>-</td><td>077 destino EMF</td><td>-</td><td>577 destino SMP</td></tr>
+<tr><td class="numero">078</td><td>São Miguel Pta.</td><td>Calmon Viana</td><td>-</td><td>078 destino CVN</td><td>-</td><td>578 destino SMP</td></tr>
+<tr><td class="numero">079</td><td>Itaim Paulista</td><td>Calmon Viana</td><td>-</td><td>079 destino CVN</td><td>-</td><td>579 destino ITI</td></tr>
+<tr><td class="numero">080</td><td>Eng. Manoel Feio</td><td>Calmon Viana</td><td>-</td><td>080 destino CVN</td><td>-</td><td>580 destino EMF</td></tr>
 
-<tr class="l12">
-<td>Linha 12</td>
-<td>061</td>
-<td>Brás</td>
-<td>Eng. Manoel Feio</td>
-<td>-</td>
-<td>061 destino EMF</td>
-<td>561 destino BAS</td>
-<td>BAS</td>
-<td>EMF</td>
-</tr>
+<tr><td class="numero">081</td><td>Eng. Goulart</td><td>Aeroporto-Guarulhos</td><td>-</td><td>081 destino AGU</td><td>-</td><td>581 destino EGO</td></tr>
+<tr><td class="numero">082</td><td>Brás</td><td>Aeroporto-Guarulhos</td><td>-</td><td>082 destino AGU</td><td>-</td><td>582 destino BAS</td></tr>
+<tr><td class="numero">083</td><td>Brás</td><td>Aeroporto-Guarulhos</td><td>Transferência com o metrô</td><td>083 destino AGU</td><td>-</td><td>583 destino BAS</td></tr>
+<tr><td class="numero">084</td><td>Luz</td><td>Aeroporto-Guarulhos</td><td>-</td><td>084 destino AGU</td><td>-</td><td>584 destino LUZ</td></tr>
 
-<tr class="l12">
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
+<tr><td class="numero">085</td><td>Barra Funda</td><td>Itaquera</td><td>-</td><td>085 destino ITQ</td><td>-</td><td>585 destino BFU</td></tr>
+<tr><td class="numero">086</td><td>Barra Funda</td><td>Itaquera</td><td>Transferência com o metrô</td><td>086 destino ITQ</td><td>-</td><td>586 destino BFU</td></tr>
 
-<tr class="l13">
-<td>Linha 13</td>
-<td>081</td>
-<td>Eng. Goulart</td>
-<td>Aeroporto-Guarulhos</td>
-<td>-</td>
-<td>081 destino AGU</td>
-<td>581 destino EGO</td>
-<td>EGO</td>
-<td>AGU</td>
-</tr>
+<tr class="destaque"> <td class="numero">087</td><td>Barra Funda</td><td>Guaianases</td><td>-</td><td>087 destino GUA</td><td>-</td><td>587 destino BFU</td></tr>
+<tr class="destaque"> <td class="numero">088</td><td>Barra Funda</td><td>Guaianases</td><td>Transferência com o metrô</td><td>088 destino GUA</td><td>-</td><td>588 destino BFU</td></tr>
 
-<tr class="l13">
-<td>Linha 13</td>
-<td>082</td>
-<td>Brás</td>
-<td>Aeroporto-Guarulhos</td>
-<td>-</td>
-<td>082 destino AGU</td>
-<td>582 destino BAS</td>
-<td>BAS</td>
-<td>AGU</td>
-</tr>
+<tr><td class="numero">089</td><td>Barra Funda</td><td>Ferraz Vasconcelos</td><td>-</td><td>089 destino FVC</td><td>-</td><td>589 destino BFU</td></tr>
+<tr><td class="numero">090</td><td>Barra Funda</td><td>Ferraz Vasconcelos</td><td>Transferência com o metrô</td><td>090 destino FVC</td><td>-</td><td>590 destino BFU</td></tr>
 
-<tr class="l11">
-<td>Linha 11</td>
-<td>085</td>
-<td>Barra Funda</td>
-<td>Itaquera</td>
-<td>-</td>
-<td>085 destino ITQ</td>
-<td>585 destino BFU</td>
-<td>BFU</td>
-<td>ITQ</td>
-</tr>
+<tr><td class="numero">091</td><td>Barra Funda</td><td>Calmon Viana</td><td>-</td><td>091 destino CVN</td><td>-</td><td>591 destino BFU</td></tr>
+<tr><td class="numero">092</td><td>Barra Funda</td><td>Calmon Viana</td><td>Transferência com o metrô</td><td>092 destino CVN</td><td>-</td><td>592 destino BFU</td></tr>
 
-<tr class="l11">
-<td>Linha 11</td>
-<td>086</td>
-<td>Barra Funda</td>
-<td>Itaquera</td>
-<td>Transferência com o metrô</td>
-<td>086 destino ITQ</td>
-<td>586 destino BFU</td>
-<td>BFU</td>
-<td>ITQ</td>
-</tr>
+<tr><td class="numero">093</td><td>Barra Funda</td><td>Suzano</td><td>-</td><td>093 destino SUZ</td><td>-</td><td>593 destino BFU</td></tr>
+<tr><td class="numero">094</td><td>Barra Funda</td><td>Suzano</td><td>-</td><td>094 destino SUZ</td><td>-</td><td>594 destino BFU</td></tr>
 
-<tr class="l7">
-<td>Linha 7</td>
-<td>150</td>
-<td>Brás</td>
-<td>Francisco Morato</td>
-<td>-</td>
-<td>150 destino FMO</td>
-<td>650 destino BAS</td>
-<td>BAS</td>
-<td>FMO</td>
-</tr>
+<tr><td class="numero">095</td><td>Barra Funda</td><td>Mogi das Cruzes</td><td>-</td><td>095 destino MDC</td><td>-</td><td>595 destino BFU</td></tr>
+<tr><td class="numero">096</td><td>Barra Funda</td><td>Mogi das Cruzes</td><td>Transferência com o metrô</td><td>096 destino MDC</td><td>-</td><td>596 destino BFU</td></tr>
 
-<tr class="l11">
-<td>Linha 11</td>
-<td>151</td>
-<td>Jundiapeba</td>
-<td>Estudantes</td>
-<td>-</td>
-<td>151 destino EST</td>
-<td>651 destino JPB</td>
-<td>JPB</td>
-<td>EST</td>
-</tr>
+<tr class="destaque"> <td class="numero">097</td><td>Barra Funda</td><td>Estudantes</td><td>-</td><td>097 destino EST</td><td>-</td><td>597 destino BFU</td></tr>
+<tr class="destaque"> <td class="numero">098</td><td>Barra Funda</td><td>Estudantes</td><td>Transferência com o metrô</td><td>098 destino EST</td><td>-</td><td>598 destino BFU</td></tr>
 
+<tr><td class="numero">099</td><td>Luz</td><td>Itaquera</td><td>-</td><td>099 destino ITQ</td><td>-</td><td>599 destino LUZ</td></tr>
+<tr><td class="numero">100</td><td>Luz</td><td>Itaquera</td><td>Transferência com o metrô</td><td>100 destino ITQ</td><td>-</td><td>600 destino LUZ</td></tr>
+
+<tr><td class="numero">101</td><td>Luz</td><td>Guaianases</td><td>-</td><td>101 destino GUA</td><td>-</td><td>601 destino LUZ</td></tr>
+<tr><td class="numero">102</td><td>Luz</td><td>Guaianases</td><td>Transferência com o metrô</td><td>102 destino GUA</td><td>-</td><td>602 destino LUZ</td></tr>
+
+<tr><td class="numero">103</td><td>Luz</td><td>Ferraz de Vasconcelos</td><td>-</td><td>103 destino FVC</td><td>-</td><td>603 destino LUZ</td></tr>
+<tr><td class="numero">104</td><td>Luz</td><td>Ferraz de Vasconcelos</td><td>Transferência com o metrô</td><td>104 destino FVC</td><td>-</td><td>604 destino LUZ</td></tr>
+
+<tr><td class="numero">105</td><td>Luz</td><td>Calmon Viana</td><td>-</td><td>105 destino CVN</td><td>-</td><td>605 destino LUZ</td></tr>
+<tr><td class="numero">106</td><td>Luz</td><td>Calmon Viana</td><td>Transferência com o metrô</td><td>106 destino CVN</td><td>-</td><td>606 destino LUZ</td></tr>
+
+<tr><td class="numero">107</td><td>Luz</td><td>Suzano</td><td>-</td><td>107 destino SUZ</td><td>-</td><td>607 destino LUZ</td></tr>
+<tr><td class="numero">108</td><td>Luz</td><td>Suzano</td><td>Transferência com o metrô</td><td>108 destino SUZ</td><td>-</td><td>608 destino LUZ</td></tr>
+
+<tr><td class="numero">109</td><td>Luz</td><td>Mogi das Cruzes</td><td>-</td><td>109 destino MDC</td><td>-</td><td>609 destino LUZ</td></tr>
+<tr><td class="numero">110</td><td>Luz</td><td>Mogi das Cruzes</td><td>Transferência com o metrô</td><td>110 destino MDC</td><td>-</td><td>610 destino LUZ</td></tr>
+
+<tr><td class="numero">111</td><td>Luz</td><td>Estudantes</td><td>-</td><td>111 destino EST</td><td>-</td><td>611 destino LUZ</td></tr>
+<tr><td class="numero">112</td><td>Luz</td><td>Estudantes</td><td>Transferência com o metrô</td><td>112 destino EST</td><td>-</td><td>612 destino LUZ</td></tr>
+
+<tr><td class="numero">113</td><td>Brás</td><td>Itaquera</td><td>-</td><td>113 destino ITQ</td><td>-</td><td>613 destino BAS</td></tr>
+<tr><td class="numero">114</td><td>Brás</td><td>Itaquera</td><td>Transferência com o metrô</td><td>114 destino ITQ</td><td>-</td><td>614 destino BAS</td></tr>
+
+<tr><td class="numero">115</td><td>Brás</td><td>Guaianases</td><td>-</td><td>115 destino GUA</td><td>-</td><td>615 destino BAS</td></tr>
+<tr><td class="numero">116</td><td>Brás</td><td>Guaianases</td><td>Transferência com o metrô</td><td>116 destino GUA</td><td>-</td><td>616 destino BAS</td></tr>
+
+<tr><td class="numero">117</td><td>Brás</td><td>Ferraz de Vasconcelos</td><td>-</td><td>117 destino FVC</td><td>-</td><td>617 destino BAS</td></tr>
+<tr><td class="numero">118</td><td>Brás</td><td>Ferraz de Vasconcelos</td><td>Transferência com o metrô</td><td>118 destino FVC</td><td>-</td><td>618 destino BAS</td></tr>
+
+<tr><td class="numero">119</td><td>Brás</td><td>Calmon Viana</td><td>-</td><td>119 destino CVN</td><td>-</td><td>619 destino BAS</td></tr>
+<tr><td class="numero">120</td><td>Brás</td><td>Calmon Viana</td><td>Transferência com o metrô</td><td>120 destino CVN</td><td>-</td><td>620 destino BAS</td></tr>
+
+<tr><td class="numero">121</td><td>Brás</td><td>Suzano</td><td>-</td><td>121 destino SUZ</td><td>-</td><td>621 destino BAS</td></tr>
+<tr><td class="numero">122</td><td>Brás</td><td>Suzano</td><td>Transferência com o metrô</td><td>122 destino SUZ</td><td>-</td><td>622 destino BAS</td></tr>
+
+<tr><td class="numero">123</td><td>Brás</td><td>Mogi das Cruzes</td><td>-</td><td>123 destino MDC</td><td>-</td><td>623 destino BAS</td></tr>
+<tr><td class="numero">124</td><td>Brás</td><td>Mogi das Cruzes</td><td>Transferência com o metrô</td><td>124 destino MDC</td><td>-</td><td>624 destino BAS</td></tr>
+
+<tr><td class="numero">125</td><td>Brás</td><td>Estudantes</td><td>-</td><td>125 destino EST</td><td>-</td><td>625 destino BAS</td></tr>
+<tr><td class="numero">126</td><td>Brás</td><td>Estudantes</td><td>Transferência com o metrô</td><td>126 destino EST</td><td>-</td><td>626 destino BAS</td></tr>
+
+<tr><td class="numero">127</td><td>Itaquera</td><td>Guaianases</td><td>-</td><td>127 destino GUA</td><td>-</td><td>627 destino ITQ</td></tr>
+<tr><td class="numero">128</td><td>Itaquera</td><td>Guaianases</td><td>Transferência com o metrô</td><td>128 destino GUA</td><td>-</td><td>628 destino ITQ</td></tr>
+
+<tr><td class="numero">129</td><td>Itaquera</td><td>Ferraz de Vasconcelos</td><td>-</td><td>129 destino FVC</td><td>-</td><td>629 destino ITQ</td></tr>
+<tr><td class="numero">130</td><td>Itaquera</td><td>Ferraz de Vasconcelos</td><td>Transferência com o metrô</td><td>130 destino FVC</td><td>-</td><td>630 destino ITQ</td></tr>
+
+<tr><td class="numero">131</td><td>Itaquera</td><td>Calmon Viana</td><td>-</td><td>131 destino CVN</td><td>-</td><td>631 destino ITQ</td></tr>
+<tr><td class="numero">132</td><td>Itaquera</td><td>Calmon Viana</td><td>Transferência com o metrô</td><td>132 destino CVN</td><td>-</td><td>632 destino ITQ</td></tr>
+
+<tr><td class="numero">133</td><td>Itaquera</td><td>Suzano</td><td>-</td><td>133 destino SUZ</td><td>-</td><td>633 destino ITQ</td></tr>
+<tr><td class="numero">134</td><td>Itaquera</td><td>Suzano</td><td>Transferência com o metrô</td><td>134 destino SUZ</td><td>-</td><td>634 destino ITQ</td></tr>
+
+<tr><td class="numero">135</td><td>Itaquera</td><td>Mogi das Cruzes</td><td>-</td><td>135 destino MDC</td><td>-</td><td>635 destino ITQ</td></tr>
+<tr><td class="numero">136</td><td>Itaquera</td><td>Mogi das Cruzes</td><td>Transferência com o metrô</td><td>136 destino MDC</td><td>-</td><td>636 destino ITQ</td></tr>
+
+<tr><td class="numero">137</td><td>Itaquera</td><td>Estudantes</td><td>-</td><td>137 destino EST</td><td>-</td><td>637 destino ITQ</td></tr>
+<tr><td class="numero">138</td><td>Itaquera</td><td>Estudantes</td><td>Transferência com o metrô</td><td>138 destino EST</td><td>-</td><td>638 destino ITQ</td></tr>
+
+<tr><td class="numero">139</td><td>Guaianases</td><td>Calmon Viana</td><td>-</td><td>139 destino CVN</td><td>-</td><td>639 destino GUA</td></tr>
+
+<tr><td class="numero">140</td><td>Suzano</td><td>Guaianases</td><td>-</td><td>140 destino GUA</td><td>-</td><td>640 destino SUZ</td></tr>
+
+<tr><td class="numero">141</td><td>Guaianases</td><td>Mogi das Cruzes</td><td>-</td><td>141 destino MDC</td><td>-</td><td>641 destino GUA</td></tr>
+
+<tr><td class="numero">142</td><td>Mogi Cruzes</td><td>Ferraz Vasconcelos</td><td>-</td><td>142 destino FVC</td><td>-</td><td>642 destino MDC</td></tr>
+
+<tr><td class="numero">143</td><td>Guaianases</td><td>Estudantes</td><td>-</td><td>143 destino EST</td><td>-</td><td>643 destino GUA</td></tr>
+
+<tr><td class="numero">144</td><td>Estudantes</td><td>Ferraz Vasconcelos</td><td>-</td><td>144 destino FVC</td><td>-</td><td>644 destino EST</td></tr>
+
+<tr><td class="numero">145</td><td>Calmon Viana</td><td>Mogi das Cruzes</td><td>-</td><td>145 destino MDC</td><td>-</td><td>645 destino CVN</td></tr>
+
+<tr><td class="numero">146</td><td>Calmon Viana</td><td>Estudantes</td><td>-</td><td>146 destino EST</td><td>-</td><td>646 destino CVN</td></tr>
+
+<tr><td class="numero">147</td><td>Suzano</td><td>Mogi das Cruzes</td><td>-</td><td>147 destino MDC</td><td>-</td><td>647 destino SUZ</td></tr>
+
+<tr><td class="numero">148</td><td>Suzano</td><td>Estudantes</td><td>-</td><td>148 destino EST</td><td>-</td><td>648 destino SUZ</td></tr>
+
+<tr><td class="numero">150</td><td>Brás</td><td>Francisco Morato</td><td>-</td><td>150 destino FMO</td><td>-</td><td>650 destino BAS</td></tr>
+
+<tr><td class="numero">151</td><td>Jundiapeba</td><td>Estudantes</td><td>-</td><td>151 destino EST</td><td>-</td><td>651 destino JPB</td></tr>
+    
 </tbody>
+
 </table>
+
+</div>
+
+</div>
 
 </body>
 </html>
